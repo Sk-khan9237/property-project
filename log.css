@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#borders{        /* outer part in css  */
+    background-color:rgb(3, 21, 61);
+    height: 4rem;
+}
+#borders img{
+   font-size: 12px;
+   height: 27px;
+   width: 30px;
+   margin-left: 15px;
+   background-color: white;
+}
+a{
+   color: white;
+   text-decoration: none;
+   margin-left: 4px;
+   margin-top: 7%;
+   font-size: 15px;
+}
+#RealHomes{
+   font-size: 23px;
+  
+ }
+#Homs{
+   margin-left: 13%;
+ }
+#abouties{
+   margin-left: 2%;
+ }
+#sellies{
+   margin-left: 2%;
+ }
+#serviceis{
+   margin-left: 2%;
+ }
+#renties{
+   margin-left: 2%;
+ }
+#producties{
+   margin-left: 2%;
+ }
+#registers{
+   margin-left: 15%;
+ }
+#startedies{
+   margin-left: 3%;
+ }
+
+       /* container part */
+  .container{
+   height: 600px;
+   width: 900px;
+   border-radius: 2px; 
+   margin-top: 5%;
+   margin-left: 15%;
+   border-radius: 14px;
+   display: flex;
+   background-color: rgb(224, 238, 243);
+  }
+
+        /*inner container*/
+
+.inner-container{
+   height: 350px;
+   width: 300px;
+   margin-top: 7%;
+   margin-left: 15%;
+   border-radius: 12px;
+   background-color: white;
+}
+#Home{
+   margin-left: 10%;
+   margin-top: 20%;
+   color:  blue;
+   font-weight: initial;
+}
+#perfect{
+    margin-left: 10%;
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: initial;
+}
+#search{
+    margin-left: 10%;
+    font-weight: initial;
+}
+    /* image part */
+#logimg{
+    margin-left: 10%;
+    margin-top: 15px;
+    height: 9.7rem;
+    width: 14rem;
+    border-radius: 3%;
+}
+ /* account part */
+
+.header-container{
+  position: absolute;
+  top: 30%;
+  left: 58%;
+  transform: translate(-10%, -10%);
+  color: black;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 7px 15px;
+  border-radius: 10px;
+ 
+}            
+#account{
+   margin-left: 5%;
+   font-weight: initial;
+}
+#enjoy{
+   margin-left: 5%;
+   font-weight: initial;
+}
+form{
+  margin-left: 5%;
+  font-weight: initial;
+}
+input{
+   margin-top: 10px;
+   width: 250px;
+   height: 35px;
+   border-radius: 5px;
+   border: 1px solid black;
+   padding-left: 10px;
+}
+#siup{
+   margin-top: 10px;
+   margin-left: 4px;
+   width: 250px;
+   height: 35px;
+   background-color: blue;
+   color: white;
+   border-radius: 13px;
+   border: 2px solid blue; 
+
+}
