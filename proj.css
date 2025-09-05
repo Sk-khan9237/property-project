@@ -9,29 +9,56 @@ body {
   line-height: 1.5;
 }
 
-/* NAVBAR */
 #border {
   background-color: rgb(3, 21, 61);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* links wrap nahi honge */
+  overflow-x: auto;  /* chhote screens me horizontal scroll aa sakta hai */
 }
+
+/* Logo + name */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 #border img {
   height: 30px;
   width: 32px;
 }
+
 #border a {
   color: white;
   text-decoration: none;
   margin: 0 0.7rem;
   font-size: 15px;
+  white-space: nowrap; /* line break nahi hone dega */
 }
+
 #RealHome {
   font-size: 20px;
   font-weight: bold;
 }
+
+/* Navbar links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap; /* hamesha row me rahe */
+  white-space: nowrap; /* wrap na ho */
+}
+
+/* Remove responsive dropdown */
+.menu-toggle {
+  display: none; /* hamburger remove */
+}
+
+/* Remove previous media query */
 
 /* HERO */
 .image-Container {
