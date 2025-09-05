@@ -1,143 +1,179 @@
-*{
-    margin: 0;
-    padding: 0;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#borders{        /* outer part in css  */
-    background-color:rgb(3, 21, 61);
-    height: 4rem;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f5f7fa;
+  color: #333;
 }
-#borders img{
-   font-size: 12px;
-   height: 27px;
-   width: 30px;
-   margin-left: 15px;
-   background-color: white;
-}
-a{
-   color: white;
-   text-decoration: none;
-   margin-left: 4px;
-   margin-top: 7%;
-   font-size: 15px;
-}
-#RealHomes{
-   font-size: 23px;
-  
- }
-#Homs{
-   margin-left: 13%;
- }
-#abouties{
-   margin-left: 2%;
- }
-#sellies{
-   margin-left: 2%;
- }
-#serviceis{
-   margin-left: 2%;
- }
-#renties{
-   margin-left: 2%;
- }
-#producties{
-   margin-left: 2%;
- }
-#registers{
-   margin-left: 15%;
- }
-#startedies{
-   margin-left: 3%;
- }
 
-       /* container part */
-  .container{
-   height: 600px;
-   width: 900px;
-   border-radius: 2px; 
-   margin-top: 5%;
-   margin-left: 15%;
-   border-radius: 14px;
-   display: flex;
-   background-color: rgb(224, 238, 243);
-  }
-
-        /*inner container*/
-
-.inner-container{
-   height: 350px;
-   width: 300px;
-   margin-top: 7%;
-   margin-left: 15%;
-   border-radius: 12px;
-   background-color: white;
+/* NAVBAR */
+#borders {
+  background-color: rgb(3, 21, 61);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.8rem 1rem;
 }
-#Home{
-   margin-left: 10%;
-   margin-top: 20%;
-   color:  blue;
-   font-weight: initial;
-}
-#perfect{
-    margin-left: 10%;
-    margin-top: 15px;
-    font-size: 30px;
-    font-weight: initial;
-}
-#search{
-    margin-left: 10%;
-    font-weight: initial;
-}
-    /* image part */
-#logimg{
-    margin-left: 10%;
-    margin-top: 15px;
-    height: 9.7rem;
-    width: 14rem;
-    border-radius: 3%;
-}
- /* account part */
-
-.header-container{
-  position: absolute;
-  top: 30%;
-  left: 58%;
-  transform: translate(-10%, -10%);
-  color: black;
+#borders img {
+  height: 32px;
+  width: 32px;
   background-color: white;
-  font-size: 18px;
+  border-radius: 6px;
+  margin-right: 0.5rem;
+}
+#borders a {
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+#borders a:hover {
+  color: red;
+}
+#RealHomes {
+  font-size: 22px;
   font-weight: bold;
-  padding: 7px 15px;
-  border-radius: 10px;
- 
-}            
-#account{
-   margin-left: 5%;
-   font-weight: initial;
+  margin-right: auto;
 }
-#enjoy{
-   margin-left: 5%;
-   font-weight: initial;
-}
-form{
-  margin-left: 5%;
-  font-weight: initial;
-}
-input{
-   margin-top: 10px;
-   width: 250px;
-   height: 35px;
-   border-radius: 5px;
-   border: 1px solid black;
-   padding-left: 10px;
-}
-#siup{
-   margin-top: 10px;
-   margin-left: 4px;
-   width: 250px;
-   height: 35px;
-   background-color: blue;
-   color: white;
-   border-radius: 13px;
-   border: 2px solid blue; 
 
+/* MAIN CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  background-color: rgb(224, 238, 243);
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* LEFT INNER CONTAINER */
+.inner-container {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  flex: 1 1 300px;
+  min-width: 280px;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+#Home {
+  color: blue;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+#perfect {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+#search {
+  margin-bottom: 1rem;
+  color: #555;
+}
+#logimg {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 8px;
+}
+
+/* ACCOUNT FORM CONTAINER */
+.header-container {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  flex: 1 1 350px;
+  min-width: 280px;
+  max-width: 450px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+#account {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+#enjoy {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 1rem;
+}
+form {
+  margin-top: 0.5rem;
+}
+input {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+input:focus {
+  border: 1px solid blue;
+  outline: none;
+}
+#siup {
+  margin-top: 15px;
+  width: 100%;
+  height: 45px;
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#siup:hover {
+  background-color: darkblue;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  #borders {
+    justify-content: center;
+  }
+  #RealHomes {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  .inner-container, .header-container {
+    max-width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  #RealHomes {
+    font-size: 18px;
+  }
+  #perfect {
+    font-size: 20px;
+  }
+  #logimg {
+    max-width: 180px;
+  }
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
 }
