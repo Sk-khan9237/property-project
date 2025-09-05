@@ -71,181 +71,90 @@ body {
   border-radius: 12px;
 }
 
-/* IMAGE GRID */
-.countner, #wool {
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  padding: 0 1rem;
-}
-.countner img, #wool img {
-  width: 100%;
-  border-radius: 6px;
-  transition: transform 0.3s;
-  margin-top: 12px;
-}
-.countner img:hover, #wool img:hover {
-  transform: scale(0.95);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-.text a{
-  color: black;
-  font-family: arial;
-  font-size: 15px;
-  margin-left: 5%;
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-#the{
- margin-right: 7%;
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
-#abhi{
- margin-right: 6%;
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
 }
-#goa{
- margin-right: 8%;
-}  
-/*3rd part */
-#deal a{
-  color: black;
-  font-family: arial;
-  font-size: 15px;
-  margin-left: 2%;
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #111;
 }
-#st{
- margin-right: 1%;
+
+.card p {
+  font-size: 14px;
+  margin: 5px 0 10px;
+  color: #333;
 }
-#sd{
- margin-right: 1%;
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
-#td{
- margin-right: 3%;
+
+.location img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
-/* 4th part locate wala */
-#flat{ 
-  font-family: arial;
-  font-size: 15px;
-  margin-left: 4%;
-  height: 22px;
-  width:  22px;
+
+.location span {
+  font-size: 14px;
+  color: #555;
 }
-#png{
-  margin-left: 12%;
-  height: 22px;
-  width:  22px;
-}
-#com{
-   margin-left: 13%;
-    height: 22px;
-   width:  22px;
-}
-#cdn{
-   margin-left: 10%;
-   height: 22px;
-   width:  22px;
-}
-#bain{
-   color: black;
-}
-#mum{
-   color: black;
-}
-#alto{
-   color: black;
-}
-#noi{
-   color: black;
-} 
-/* Details part */
-#details button{
+
+.card button {
   background-color: red;
-  color: white;
-  padding: 8px 16px;
+  color: #fff;
   border: none;
-  border-radius: 8px;
-  margin-top: 10px;
-  margin-left: 5%;
-  margin-right: 92px;
-  cursor: pointer;
-}
-.texts a{
-   color: black;
-   margin-left: 6%;
-}
-#Pacifica{
- margin-right: 5%;
-}
-#Address{
- margin-right: 4%;
-}
-#Sobha{
- margin-right: 6%;
-}  
-/* second img third..part */
-#deals a{
-   color: black;
-   margin-left: 4%;
-}
-#Companies{
- margin-right: 7%;
-}
-#Raymond{
- margin-right: 8%;
-}
-#Sbl{
- margin-right: 10%;
-}
-/* second img fourth..part */
-#seri{ 
-   margin-left: 3%;
-   height: 22px;
-   width:  22px;
-}
-#bdra{
-    margin-left: 10%;
-    height: 22px;
-    width:  22px;
-} 
-#guda{
-    margin-left: 6%;
-    height: 22px;
-    width:  22px;
-}
-#heri{
-   margin-left: 6%;
-   height: 22px;
-   width:  22px;
-} 
-#Siruseri{
-   color: black;
-}
-#Bandra{
-   color: black;
-}
-#Somajiguda{
-   color: black;
-}
-#Andheri{
-   color: black;
-} 
-/* second img detail..part */
-#detail button{
-  background-color: red;
-  color: white;
   padding: 8px 16px;
-  border: none;
-  border-radius: 8px;
-  margin-top: 10px;
-  margin-left: 5%;
-  margin-right: 92px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 14px;
 }
-#views{
-    margin-left: 11%;
+
+.card button:hover {
+  background-color: darkred;
 }
-#protects{
-    margin-left: 10%;
+
+/* Responsive Text Adjustments */
+@media (max-width: 768px) {
+  .card h3 {
+    font-size: 16px;
+  }
+  .card p, .location span {
+    font-size: 13px;
+  }
 }
-#mirrors{
-    margin-left: 10%;
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* QUALITY SECTION */
